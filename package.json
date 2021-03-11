@@ -2,10 +2,10 @@
   "name": "basicRestApi",
   "version": "1.0.0",
   "description": "basicRestApi",
-  "main": "webServer.js",
+  "main": "server.js",
   "scripts": {
-    "test": "node webServer.js",
-    "start": "node webServer.js"
+    "test": "nodemon server.js",
+    "start": "nodemon server.js"
   },
   "author": "Kerim AKSAK",
   "license": "MIT",
