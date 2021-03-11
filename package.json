@@ -1,0 +1,12 @@
+{
+  "name": "basicRestApi",
+  "version": "1.0.0",
+  "description": "basicRestApi",
+  "main": "webServer.js",
+  "scripts": {
+    "test": "node webServer.js",
+    "start": "node webServer.js"
+  },
+  "author": "Kerim AKSAK",
+  "license": "MIT"
+}
