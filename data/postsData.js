@@ -1,8 +1,9 @@
 //NOTE: abstract max 140
+// post_id güncellemeden önce card_id ismine sahipti!
 const postsData = [
   {
     id: 1,
-    card_id: "0",
+    post_id: "0",
     post_title: "Güvenlik Duvarı Nedir / Ne İşe Yarar?",
     writer: "Kerim AKSAK",
     post_date: "16 Şubat 2021",
@@ -15,7 +16,7 @@ const postsData = [
   },
   {
     id: 2,
-    card_id: "1",
+    post_id: "1",
     post_title: "XSS Detayları",
     writer: "Kerim AKSAK",
     post_date: "16 Şubat 2021",
