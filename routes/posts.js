@@ -8,15 +8,15 @@ router.get("/", (req, res, next) => {
   });
 });
 
-router.get("/:postID", (req, res, next) => {
+router.get("/getPost/:postID", (req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
   const id = req.params.postID;
   const control = Number(id) / 1;
   if (control > 0) {
     if (id <= postsData.length) {
       const found = postsData.find((item) => item.id == id);
-      res.status(200).json({
-        value: found,
-      });
+      res.status(200).end(JSON.stringify(found, null, 3));
     } else {
       res.status(200).json({
         Error: "INVALID ARGUMENT!",
@@ -27,6 +27,13 @@ router.get("/:postID", (req, res, next) => {
       Error: "INVALID ARGUMENT TYPE!",
     });
   }
+});
+
+router.get("/dataLength", (req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Content-Type", "application/json");
+  res.status(200).end(JSON.stringify(newsData.length, null, 3));
 });
 
 module.exports = router;
