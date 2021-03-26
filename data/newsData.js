@@ -8,7 +8,7 @@ const newsData = [
     imageWidth: "220px",
     source_of_news: "www.example.com",
     news_title:
-      "Windows Kullanıcıları Başka Bir Siber Tehdit Dalgasıyla Karşı Karşıya",
+      "API Windows Kullanıcıları Başka Bir Siber Tehdit Dalgasıyla Karşı Karşıya",
     news_date: "16 Şubat 2021",
     news_abstract:
       "Masaüstü kullanıcılarının% 75'inden fazlası tarafından kullanılan en popüler işletim sistemlerinden biri olan Windows, siber saldırıların hedef aldığı en önemli ürünlerden biridir...",

@@ -31,9 +31,21 @@ router.get("/getPost/:postID", (req, res, next) => {
 
 router.get("/dataLength", (req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Content-Type", "application/json");
+  res.status(200).end(JSON.stringify(postsData.length, null, 3));
+});
+
+router.get("/getAllPosts", (req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
+  res.status(200).end(JSON.stringify(postsData, null, 3));
+});
+
+router.get("/getAllPostsID", (req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Content-Type", "application/json");
-  res.status(200).end(JSON.stringify(newsData.length, null, 3));
+  const postID = postsData.map((item) => item.post_id);
+  res.status(200).end(JSON.stringify(postID, null, 3));
 });
 
 module.exports = router;
