@@ -1,5 +1,5 @@
 const http = require("http");
-const hostname = "localhost";
+const hostname = "https://mangala-api.herokuapp.com";
 
 const app = require("./app");
 
